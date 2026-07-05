@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frédéric Li Combeau — Generative AI Research</title>
+<meta name="description" content="Frédéric Li Combeau — master's student in AI, Algorithms & Decision at Sorbonne University, researching generative models and 3D scene synthesis.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a class="wordmark" href="#top">F. Li&nbsp;Combeau</a>
+  <nav class="site-nav">
+    <a href="#research" data-nav>Research</a>
+    <a href="#projects" data-nav>Projects</a>
+    <a href="#background" data-nav>Background</a>
+    <a href="#off-the-clock" data-nav>Off the clock</a>
+    <a href="#contact" data-nav>Contact</a>
+  </nav>
+  <button id="theme-toggle" type="button" aria-label="Switch between day and night mode">
+    <svg viewBox="0 0 24 24" class="icon-day" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+    <svg viewBox="0 0 24 24" class="icon-night" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+  </button>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <p class="eyebrow">Master's student — AI, Algorithms &amp; Decision — Sorbonne University</p>
+      <h1>Frédéric<br>Li&nbsp;Combeau</h1>
+      <p class="lede">I build and study generative models — the kind that don't just render a
+        plausible image, but hold some usable notion of the scene behind it. Next stop, hopefully:
+        a PhD built around that question.</p>
+
+      <p class="now">
+        <span class="tag">Now</span>
+        Research intern at the PRS Group, ETH Zürich,
+        working with Google on text-to-panoramic 3D Gaussian Splatting via MeanFlow distillation
+        and model stitching.
+      </p>
+
+      <div class="hero-links">
+        <button class="pill" id="copy-email" type="button" data-email="fredlicombeau@gmail.com">
+          <span class="pill-label">fredlicombeau [at] gmail [dot] com</span>
+          <span class="pill-copied">Copied</span>
+        </button>
+        <a class="pill" href="https://github.com/Elta305/" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="pill" href="https://www.linkedin.com/in/frederic-li-combeau" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="pill" href="Frédéric_Li_Combeau_CV.pdf" target="_blank" rel="noopener">CV (PDF) ↓</a>
+      </div>
+    </div>
+
+    <figure class="hero-figure" aria-hidden="false">
+      <svg id="orion" viewBox="0 0 300 400" role="img" aria-label="The constellation Orion">
+        <g class="lines">
+          <line x1="95" y1="78" x2="145" y2="42"/>
+          <line x1="145" y1="42" x2="192" y2="88"/>
+          <line x1="95" y1="78" x2="118" y2="182"/>
+          <line x1="192" y1="88" x2="181" y2="200"/>
+          <line x1="118" y1="182" x2="150" y2="191"/>
+          <line x1="150" y1="191" x2="181" y2="200"/>
+          <line x1="150" y1="228" x2="154" y2="259"/>
+          <line x1="150" y1="191" x2="150" y2="228"/>
+          <line x1="118" y1="182" x2="112" y2="322"/>
+          <line x1="181" y1="200" x2="201" y2="332"/>
+        </g>
+        <g class="stars">
+          <circle cx="95" cy="78" r="4.5" data-name="Betelgeuse"/>
+          <circle cx="145" cy="42" r="3" data-name="Meissa"/>
+          <circle cx="192" cy="88" r="3.6" data-name="Bellatrix"/>
+          <circle cx="118" cy="182" r="3.2" data-name="Mintaka"/>
+          <circle cx="150" cy="191" r="3.4" data-name="Alnilam"/>
+          <circle cx="181" cy="200" r="3.2" data-name="Alnitak"/>
+          <circle cx="150" cy="228" r="2" data-name="Sword"/>
+          <circle cx="154" cy="259" r="2.2" data-name="M42"/>
+          <circle cx="112" cy="322" r="4" data-name="Saiph"/>
+          <circle cx="201" cy="332" r="4.6" data-name="Rigel"/>
+        </g>
+      </svg>
+      <figcaption id="star-label">&nbsp;</figcaption>
+    </figure>
+  </section>
+
+  <section id="research">
+    <h2><span class="num">01</span>Research</h2>
+
+    <ol class="timeline">
+      <li class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">Mar – Aug 2026</span>
+          <span class="entry-status">ongoing</span>
+        </div>
+        <h3>Text-to-Panoramic 3D Gaussian Splatting via MeanFlow Distillation and Model Stitching</h3>
+        <p class="entry-place">PRS Group, ETH Zürich — in collaboration with Google</p>
+        <p class="entry-people">Supervised by Postdoc. Narnhofer, Prof. Schindler, Prof. Tombari</p>
+        <p class="entry-desc">Master's thesis project. A paper is planned for submission after the thesis is done.</p>
+      </li>
+      <li class="entry">
+        <div class="entry-meta">
+          <span class="entry-date">Jun – Sep 2025</span>
+          <span class="entry-status">grade 17/20</span>
+        </div>
+        <h3>Limitations of Test-Time Adaptation (TTA) methods in Online Continual Learning</h3>
+        <p class="entry-place">CVM Lab, University of Tokyo</p>
+        <p class="entry-people">Supervised by Postdoc Michel, Prof. Yamasaki</p>
+        <p class="entry-desc">Proposed a new, more realistic evaluation setup for combined continual-learning /
+          test-time-adaptation deployment. A paper is planned for submission soon.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2><span class="num">02</span>Academic Projects</h2>
+
+    <ul class="project-grid">
+      <li class="project">
+        <span class="project-tag">M2 project</span>
+        <h3>Style Decomposition and Content Preservation for Artistic Style Transfer</h3>
+        <p>Reproduction of the original paper plus additional experiments.</p>
+        <a href="https://openreview.net/forum?id=kTMrlXV1my" target="_blank" rel="noopener">Original paper ↗</a>
+      </li>
+      <li class="project">
+        <span class="project-tag">M2 project</span>
+        <h3>Multimodal Visual Personalization of Generative Models via Individual Preference Learning</h3>
+        <p>Added a multimodal (eye-tracking) signal and a new pipeline to improve image personalization,
+          with a full evaluation of the resulting model.</p>
+        <a href="https://viper.epfl.ch/" target="_blank" rel="noopener">Paper website ↗</a>
+      </li>
+      <li class="project">
+        <span class="project-tag">M2 project</span>
+        <span class="stamp">highest grade</span>
+        <h3>Tactical Optimism and Pessimism in RL</h3>
+        <p>Analysis of the original paper plus additional experiments.</p>
+        <a href="https://arxiv.org/abs/2102.03765" target="_blank" rel="noopener">Original paper ↗</a>
+      </li>
+      <li class="project">
+        <span class="project-tag">M1 semester project</span>
+        <span class="stamp">highest grade</span>
+        <h3>AFU: Actor-Free Critic Updates</h3>
+        <p>Implementation and analysis of <a href="https://arxiv.org/abs/2404.16159" target="_blank" rel="noopener">“AFU: Actor-Free
+          critic Updates in off-policy RL for continuous control.”</a> Found that AFU outperforms other
+          algorithms in offline-to-online transition, but not in an off-policy uniform-sampling setting.</p>
+        <a href="https://github.com/paulchambaz/afu-study" target="_blank" rel="noopener">Github ↗</a>
+      </li>
+      <li class="project">
+        <span class="project-tag">Bachelor's project</span>
+        <h3>Smart Home</h3>
+        <p>A small smart house built on Raspberry Pi and Arduino: MobileNet for person detection,
+          a Firebase database, a mobile app and a PC interface.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="background">
+    <h2><span class="num">03</span>Background</h2>
+
+    <div class="background-grid">
+      <div class="education">
+        <div class="edu-entry">
+          <span class="entry-date">2024 – Sep 2026</span>
+          <h3>Master's degree, AI2D <span class="subtle">(AI, Algorithms, Decision)</span></h3>
+          <p class="entry-place">Sorbonne University</p>
+          <p class="course-list">Deep Learning · Advanced Deep Learning <em>(audited)</em> · Multimodal AI ·
+            AI for Robotics <em>(ranked 1st)</em> · AI for Vision <em>(extra course)</em> ·
+            Advanced Optimization Methods and Applications · Human–AI Interaction</p>
+        </div>
+        <div class="edu-entry">
+          <span class="entry-date">Sep 2024 – Jan 2025</span>
+          <h3>Extra course, Robotics</h3>
+          <p class="entry-place">ENS Ulm</p>
+        </div>
+        <div class="edu-entry">
+          <span class="entry-date">2021 – 2024</span>
+          <h3>Bachelor's degree, Computer Science</h3>
+          <p class="entry-place">Paris-Saclay University</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group">
+          <h4>Programming</h4>
+          <p>Python, PyTorch, OpenCV, NumPy, SciPy, Pandas, scikit-learn, Seaborn, Git/GitHub</p>
+        </div>
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <p>French — native · English — professional (TOEIC C1)</p>
+        </div>
+        <div class="skill-group">
+          <h4>Other</h4>
+          <p>French driving licence · Civil Security citizen skills certificate ·
+            Certificate of Musical Studies (11+ years of guitar and composition)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="off-the-clock">
+    <h2><span class="num">04</span>Off the clock</h2>
+    <p class="section-note">The parts of the CV that don't fit in a bullet point.</p>
+
+    <ul class="marginalia">
+      <li><span class="m-year">Ongoing</span> Composer, guitarist and pianist.</li>
+      <li><span class="m-year">2024</span> Took part in Prologin, the French programming competition.</li>
+      <li><span class="m-year">2018</span> Competed in the France Chess Championship at the regional level.</li>
+      <li><span class="m-year">During middle school</span> A few charity sporting events for Action contre la Faim.</li>
+      <li><span class="m-year">Always</span> History and hiking, usually not at the same time.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <p class="footer-lede">Looking ahead to a PhD in generative AI — models that hold some real
+      understanding of the world they're generating. Feel free to reach out if you have a position open in generative AI, representation learning and/or world models, or if you have anything that you want to tell or ask me.</p>
+    <div class="hero-links">
+      <button class="pill" id="copy-email-2" type="button" data-email="fredlicombeau@gmail.com">
+        <span class="pill-label">fredlicombeau [at] gmail [dot] com</span>
+        <span class="pill-copied">Copied</span>
+      </button>
+      <a class="pill" href="https://github.com/Elta305/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="pill" href="https://www.linkedin.com/in/frederic-li-combeau" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <p class="footer-meta">Paris / Zürich · updated July 2026</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
